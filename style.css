@@ -1,0 +1,108 @@
+*{
+    background-color: rgb(241, 241, 241);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+.body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img, .content{
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    border-radius: 20px;
+}
+.heading, .react{
+    margin: 15px;
+    background-color: white;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    background-color: white;
+}
+.first{
+    height: 450px;
+    width: 610px;
+    display: flex;
+}
+.icon svg, .icon h4, .heading h2, .para, .bold, .fl{
+    
+    background-color: white;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.fl{
+    display: flex;
+    align-items: center;
+}
+.react{
+    display: flex;
+    gap: 120px;
+}
+.verbal, .visual{
+    gap: 133px;
+}
+.bn{
+    text-align: center;
+    background-color: white;
+}
+.btn{
+    background-color: blue;
+    border: 2px solid blue;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 45px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width:450px){
+    .body{
+        
+        height: 100vh;
+        width: 100vw;
+    }
+    .img, .content{
+             height: 95%;
+             width: 100vw;
+    }
+    .first{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .react{
+        gap: 180px;
+        font-size: 27px;
+    }
+    .verbal, .visual{
+        gap: 200px;
+    }
+    img{
+        object-fit: cover;
+        object-position: center;
+    }
+    .img{
+        height: 45%;
+    }
+    .heading, .react{
+        margin: 18px;
+    }
+    .heading h2{
+        font-size: 35px;
+    }
+    .btn{
+        font-size: 22px;
+    padding: 15px 130px;
+    border-radius: 45px;
+    }
+}
